@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: sportvision-monitor
+    runtime: python
+    buildCommand: ""
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
